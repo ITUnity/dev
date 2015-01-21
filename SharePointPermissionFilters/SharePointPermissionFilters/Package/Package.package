@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="67da3c7a-1f47-4b4d-9cba-2a6b11c5cb97" solutionId="67da3c7a-1f47-4b4d-9cba-2a6b11c5cb97" resetWebServer="false" sharePointProductVersion="15.0" name="SharePointPermissionFilters" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="24e37907-ba83-4be7-a85a-e34c9e3f325e" />
+  </features>
+</package>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointPermissionFilters", "SharePointPermissionFilters\SharePointPermissionFilters.csproj", "{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointPermissionFiltersWeb", "SharePointPermissionFiltersWeb\SharePointPermissionFiltersWeb.csproj", "{231F8E00-E5F8-4879-BDAC-58E4ACF01626}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B7525E1A-47FA-4044-A224-637247591E82}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C850FE1-B40B-4361-82FE-1DCCFE9AFF20}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{231F8E00-E5F8-4879-BDAC-58E4ACF01626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231F8E00-E5F8-4879-BDAC-58E4ACF01626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231F8E00-E5F8-4879-BDAC-58E4ACF01626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231F8E00-E5F8-4879-BDAC-58E4ACF01626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

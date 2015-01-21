@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Manage Lists";
+}
+
+<h2>Lists</h2>
+
+<div class="jumbotron">
+    <table>
+        <thead><tr><th>Title</th><th>URL</th></tr></thead>
+        @foreach (var listModel in ViewBag.ListModels)
+    {
+            <tr>
+                <td>
+                    @listModel.Title
+                </td>
+                <td>
+                    @listModel.Url
+                </td>
+            </tr>
+    }
+    </table>
+</div>

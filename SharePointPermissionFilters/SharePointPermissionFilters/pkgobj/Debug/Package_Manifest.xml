@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="67da3c7a-1f47-4b4d-9cba-2a6b11c5cb97" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="SharePointPermissionFilters_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

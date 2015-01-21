@@ -1,0 +1,7 @@
+E:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\bin\Debug\SharePointPermissionFilters.pdb
+E:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\obj\Debug\SharePointPermissionFilters.dll
+E:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\obj\Debug\SharePointPermissionFilters.pdb
+D:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\bin\Debug\SharePointPermissionFilters.pdb
+D:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\obj\Debug\SharePointPermissionFilters.dll
+D:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\obj\Debug\SharePointPermissionFilters.pdb
+D:\Demos\31 - MVC5\SharePointPermissionFilters\SharePointPermissionFilters\bin\Debug\SharePointPermissionFilters.dll.config

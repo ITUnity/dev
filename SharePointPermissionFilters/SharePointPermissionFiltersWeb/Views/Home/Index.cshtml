@@ -1,0 +1,49 @@
+﻿@model SharePointPermissionFiltersWeb.ViewModels.SharePointPermissionViewModel
+  
+@{
+    ViewBag.Title = "Permissions";
+}
+          
+<div class="jumbotron">
+    <h2>@Html.DisplayTextFor(model => model.userTitle) Permissions</h2>
+    <h3>For site: @Html.DisplayTextFor(model => model.webTitle)</h3>
+    <table>
+        <thead><tr><th>Permission</th><th></th></tr></thead>
+        <tbody>
+            <tr><td>View List Items</td><td>@Html.DisplayFor(model=>model.hasViewListItems)</td></tr>
+            <tr><td>Add List Items</td><td>@Html.DisplayFor(model => model.hasAddListItems)</td></tr>
+            <tr><td>Edit List Items</td><td>@Html.DisplayFor(model => model.hasEditListItems)</td></tr>
+            <tr><td>Delete List Items</td><td>@Html.DisplayFor(model => model.hasDeleteListItems)</td></tr>
+            <tr><td>Approve List Items</td><td>@Html.DisplayFor(model => model.hasApproveItems)</td></tr>
+            <tr><td>Open List Items</td><td>@Html.DisplayFor(model => model.hasOpenItems)</td></tr>
+            <tr><td>View Versions</td><td>@Html.DisplayFor(model => model.hasViewVersions)</td></tr>
+            <tr><td>Delete Versions</td><td>@Html.DisplayFor(model => model.hasDeleteVersions)</td></tr>
+            <tr><td>Cancel Checkout</td><td>@Html.DisplayFor(model => model.hasCancelCheckout)</td></tr>
+            <tr><td>Manage Personal Views</td><td>@Html.DisplayFor(model => model.hasManagePersonalViews)</td></tr>
+            <tr><td>Manage Lists</td><td>@Html.DisplayFor(model => model.hasManageLists)</td></tr>
+            <tr><td>Anonymous Search Access List</td><td>@Html.DisplayFor(model => model.hasAnonymousSearchAccessList)</td></tr>
+            <tr><td>Open</td><td>@Html.DisplayFor(model => model.hasOpen)</td></tr>
+            <tr><td>View Pages</td><td>@Html.DisplayFor(model => model.hasViewPages)</td></tr>
+            <tr><td>Add and Customize Pages</td><td>@Html.DisplayFor(model => model.hasAddAndCustomizePages)</td></tr>
+            <tr><td>Apply Theme and Border</td><td>@Html.DisplayFor(model => model.hasApplyThemeAndBorder)</td></tr>
+            <tr><td>Apply Style Sheets</td><td>@Html.DisplayFor(model => model.hasApplyStyleSheets)</td></tr>
+            <tr><td>View Usage Data</td><td>@Html.DisplayFor(model => model.hasViewUsageData)</td></tr>
+            <tr><td>Create Self-Service Site Collection</td><td>@Html.DisplayFor(model => model.hasCreateSSCSite)</td></tr>
+            <tr><td>Manage Subwebs</td><td>@Html.DisplayFor(model => model.hasManageSubwebs)</td></tr>
+            <tr><td>Create Groups</td><td>@Html.DisplayFor(model => model.hasCreateGroups)</td></tr>
+            <tr><td>Manage Permissions</td><td>@Html.DisplayFor(model => model.hasManagePermissions)</td></tr>
+            <tr><td>Browse Directories</td><td>@Html.DisplayFor(model => model.hasBrowseDirectories)</td></tr>
+            <tr><td>Browse User Info</td><td>@Html.DisplayFor(model => model.hasBrowseUserInfo)</td></tr>
+            <tr><td>Add Delete Private WebParts</td><td>@Html.DisplayFor(model => model.hasAddDelPrivateWebParts)</td></tr>
+            <tr><td>Update Personal WebParts</td><td>@Html.DisplayFor(model => model.hasUpdatePersonalWebParts)</td></tr>
+            <tr><td>Manage Web</td><td>@Html.DisplayFor(model => model.hasManageWeb)</td></tr>
+            <tr><td>Anonymous Search Access Web Lists</td><td>@Html.DisplayFor(model => model.hasAnonymousSearchAccessWebLists)</td></tr>
+            <tr><td>Use Client Integration</td><td>@Html.DisplayFor(model => model.hasUseClientIntegration)</td></tr>
+            <tr><td>Use Remote APIs</td><td>@Html.DisplayFor(model => model.hasUseRemoteAPIs)</td></tr>
+            <tr><td>Manage Alerts</td><td>@Html.DisplayFor(model => model.hasManageAlerts)</td></tr>
+            <tr><td>Create Alerts</td><td>@Html.DisplayFor(model => model.hasCreateAlerts)</td></tr>
+            <tr><td>Edit My User Info</td><td>@Html.DisplayFor(model => model.hasEditMyUserInfo)</td></tr>
+            <tr><td>Enumerate Permissions</td><td>@Html.DisplayFor(model => model.hasEnumeratePermissions)</td></tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,4 @@
+E:\Demos\37 - O365 APIs\O365SharePointApp\O365SharePointApp\bin\Debug\O365SharePointApp.dll.config
+E:\Demos\37 - O365 APIs\O365SharePointApp\O365SharePointApp\bin\Debug\O365SharePointApp.pdb
+E:\Demos\37 - O365 APIs\O365SharePointApp\O365SharePointApp\obj\Debug\O365SharePointApp.dll
+E:\Demos\37 - O365 APIs\O365SharePointApp\O365SharePointApp\obj\Debug\O365SharePointApp.pdb

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest" Name="SharePointPermissionFilters" ProductID="{bebd112b-672a-45c8-aaa2-b845bc453a11}" Version="1.0.0.0" SharePointMinVersion="15.0.0.0">
+  <Properties>
+    <Title>SharePointPermissionFilters</Title>
+    <StartPage>https://localhost:44349/?{StandardTokens}</StartPage>
+  </Properties>
+  <AppPrincipal>
+    <AutoDeployedWebApplication>
+      <DebugInfo ClientSecret="h4YbY37Fl1N8BVJ2w1f45Dcl+JbDGRJXDQUzBmKgBOk=" AppUrl="https://localhost:44349/" />
+    </AutoDeployedWebApplication>
+  </AppPrincipal>
+  <AppPermissionRequests AllowAppOnlyPolicy="true">
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection" Right="FullControl" />
+  </AppPermissionRequests>
+</App>
