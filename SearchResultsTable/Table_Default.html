@@ -1,0 +1,129 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>Table Item</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default result item template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Path':'Path','Description':'Description','EditorOWSUSER':'EditorOWSUSER','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','HitHighlightedProperties':'HitHighlightedProperties','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink','FileType':'FileType','IsContainer':'IsContainer','SecondaryFileExtension':'SecondaryFileExtension','DisplayAuthor':'DisplayAuthor'</mso:ManagedPropertyMapping>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Table_Default">
+        <!--#_
+                if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+                    var id = ctx.ClientControl.get_nextUniqueId();
+                    var itemId = id + Srch.U.Ids.item;
+                    var hoverId = id + Srch.U.Ids.hover;
+                    var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Default_HoverPanel.js";
+                    $setResultItem(itemId, ctx.CurrentItem);
+                    if(ctx.CurrentItem.IsContainer){
+                        ctx.CurrentItem.csr_Icon = Srch.U.getFolderIconUrl();
+                    }
+                    ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+                    ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+
+                    getBackgroundColor = function () {
+                      var idParts = itemId.split('_');
+                      if((idParts[idParts.length-2].match(/[0-9]+/) % 2) === 0){
+                        return '#fff';
+                      }
+                      else {
+                        return '#eee';
+                      }
+                    };
+
+
+                    formatProperties = function (inString) {
+                      try {
+                        var divString = "<div style='display:list-item;list-style-type:disc;white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;'>";
+                        var outString = inString;
+                        outString =  outString.replace('</HHTitle>','</div>')
+                        outString =  outString.replace('<HHTitle>', divString)
+                        outString =  outString.replace('</HHUrl>','</div>')
+                        outString =  outString.replace('<HHUrl>', divString)
+                        outString =  outString.replace('</c0>','</strong>');
+                        outString =  outString.replace('<c0>','<strong>');
+                        return outString;
+                      }
+                      catch(err) {
+                        return "";
+                      }
+                    };
+
+                    formatDelimiters = function (inString) {
+                      try {
+                        return inString.replace(';','<br/>');
+                      }
+                      catch (err) {
+                        return "";
+                      }
+                    }
+
+                   formatDate = function (inDate) {
+                      try {
+                        inDate = inDate.toString();
+                        return inDate.split(' ')[1] + ' ' + inDate.split(' ')[2] + ', ' + inDate.split(' ')[5]
+                      }
+                      catch (err) {
+                        return "";
+                      }
+                    };
+
+                  formatAccountName = function (inString) {
+                      try {
+                        var parts = inString.split('|');
+                        if(parts.length===2){
+                          return parts[0];
+                        }
+                        else {
+                          return parts[1];
+                        }
+                      }
+                      catch (err) {
+                        return "";
+                      }
+                  };
+
+        _#-->
+        <div style="display:table;width:1050px;">
+            <div style="display: table-row;background-color: _#=getBackgroundColor()=#_;">
+                <div style="min-width:300px;width:300px;max-width:300px;display: table-cell;white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;" onmouseover="javascript:document.getElementById('_#= $htmlEncode(hoverId) =#_').style.display = 'block';" onmouseout="javascript:document.getElementById('_#= $htmlEncode(hoverId) =#_').style.display = 'none';">
+                    <a href="_#=ctx.CurrentItem.Path=#_">_#=ctx.CurrentItem.Title=#_</a>
+                </div>
+                <div style="min-width:300px;width:300px;max-width:300px;display: table-cell;white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;">
+                    _#=formatProperties(ctx.CurrentItem.HitHighlightedProperties)=#_
+                </div>
+                <div style="min-width:150px;width:300px;max-width:300px;display: table-cell;white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;">
+                    _#=formatDelimiters(ctx.CurrentItem.DisplayAuthor)=#_
+                </div>
+                <div style="min-width:150px;width:150px;max-width:150px;display: table-cell;white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;">
+                    _#=formatAccountName(ctx.CurrentItem.EditorOWSUSER)=#_
+                </div>
+                <div style="min-width:150px;width:150px;max-width:150px;display: table-cell;white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;">
+                    _#=formatDate(ctx.CurrentItem.LastModifiedTime)=#_
+                </div>
+            </div>
+        </div>
+
+        <div id="_#= $htmlEncode(hoverId) =#_" style="display:none;padding:15px;width:1050px;">
+            <div style="background-color:#fff;box-shadow:10px 10px 5px #888;border:1px #000 solid;padding:10px;">
+                <div style="font-weight:bold">
+                    _#=ctx.CurrentItem.Title=#_
+                </div>
+                <div>
+                    _#=STSHtmlDecode(ctx.CurrentItem.HitHighlightedSummary)=#_
+                </div>
+            </div>
+        </div>
+        <!--#_
+                }
+        _#-->
+    </div>
+</body>
+</html>
