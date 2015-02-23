@@ -1,7 +1,8 @@
 CDN Manager Read Me
 ===================
 The CDN Manager is used to manage JavaScript libraries in a site to support Script Editor web parts.
-To get started:
+
+## To get started:
 1. Download the project
 2. Change the SiteUrl property to refer to one of your sites
 3. Hit F5 to start debugging
@@ -37,3 +38,7 @@ Knockout and jQuery loading simultaneously
   </script>
 
   ```
+
+## Known issues
+1. If MDS is anabled on the site, then the callback function will not fire on subsequent page loads
+2. Scripting must be enabled in the tenancy to use script editor web parts
