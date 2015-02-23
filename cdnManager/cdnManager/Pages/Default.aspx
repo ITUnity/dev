@@ -23,38 +23,48 @@
 
     <div id="toolbarDiv">
         <button id="manageButton" class="btn">Manage CDN List</button>
-        <button id="injectButton" class="btn">Install Active CDNs</button>
-        <button id="removeButton" class="btn">Remove All CDNs</button>
+        <button id="injectButton" title="Inject" class="btn" data-bind="enable: window.allowScripting()===true && window.validationComplete() === true">Inject Active CDNs</button>
+        <button id="removeButton" title="Remove" class="btn" data-bind="enable: window.allowScripting()===true && window.validationComplete() === true">Remove All CDNs</button>
+
     </div>
     <div id="resultsDiv">
+        <div id="messagesDiv">
+            <!-- ko if:window.allowScripting() === false -->
+            <p style="color:red">You do not have sufficient rights to inject CDNs into the host web. Be sure scripting is enabled in the tenant settings, and that you have site administrator rights.</p>
+            <!-- /ko -->
+        </div>
         <table id="cdnTable">
             <caption>CDN Status</caption>
             <thead>
                 <tr>
                     <th><span style="margin-right: 15px;">Title</span></th>
+                    <th><span style="margin-right: 15px;">Type</span></th>
                     <th><span style="margin-right: 15px;">Url</span></th>
+                    <th><span style="margin-right: 15px;">Dependency</span></th>
                     <th><span style="margin-right: 15px;">Validated</span></th>
                     <th><span style="margin-right: 15px;">Active</span></th>
-                    <th><span style="margin-right: 15px;">Installed</span></th>
                 </tr>
             </thead>
             <tbody id="resultsTable" data-bind="foreach: window.cdnEntries">
                 <tr>
                     <td data-bind="text: Title"></td>
+                    <td data-bind="text: Type"></td>
                     <td data-bind="text: Url"></td>
+                    <td data-bind="text: Dependency"></td>
                     <td>
-                        <!-- ko if:Validated -->
-                        <img src="../Images/check.png" alt="Yes"/>
+                        <!-- ko if:Validated() === undefined -->
+                        <img src="../Images/progress.gif" alt="Working" />
+                        <!-- /ko -->
+                        <!-- ko if:Validated() === true -->
+                        <img src="../Images/check.png" alt="Yes" />
+                        <!-- /ko -->
+                        <!-- ko if:Validated() === false -->
+                        <img src="../Images/x.png" alt="No" />
                         <!-- /ko -->
                     </td>
                     <td>
                         <!-- ko if:Active -->
-                        <img src="../Images/check.png" alt="Yes"/>
-                        <!-- /ko -->
-                    </td>
-                    <td>
-                        <!-- ko if:Installed -->
-                        <img src="../Images/check.png" alt="Yes"/>
+                        <img src="../Images/check.png" alt="Yes" />
                         <!-- /ko -->
                     </td>
                 </tr>

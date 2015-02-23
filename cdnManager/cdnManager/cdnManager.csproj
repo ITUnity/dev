@@ -59,6 +59,8 @@
     <Content Include="CDNs\Elements.xml" />
     <Content Include="CDNs\Schema.xml" />
     <Content Include="Images\check.png" />
+    <Content Include="Images\PROGRESS.GIF" />
+    <Content Include="Images\x.png" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
@@ -72,7 +74,6 @@
     <Content Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />
-    <Content Include="Scripts\TestCDN.js" />
     <Content Include="Scripts\knockout-3.2.0.debug.js" />
     <Content Include="Scripts\knockout-3.2.0.js" />
     <Content Include="Scripts\_references.js" />
