@@ -1,9 +1,0 @@
-D:\Demos\04 - SharePoint-Hosted Apps\cdnManager\cdnManager\bin\Release\cdnManager.pdb
-D:\Demos\04 - SharePoint-Hosted Apps\cdnManager\cdnManager\obj\Release\cdnManager.dll
-D:\Demos\04 - SharePoint-Hosted Apps\cdnManager\cdnManager\obj\Release\cdnManager.pdb
-D:\GitHub\ITUnity\cdnManager\cdnManager\bin\Release\cdnManager.pdb
-D:\GitHub\ITUnity\cdnManager\cdnManager\obj\Release\cdnManager.dll
-D:\GitHub\ITUnity\cdnManager\cdnManager\obj\Release\cdnManager.pdb
-D:\GitHub\ITUnity\dev\cdnManager\cdnManager\bin\Release\cdnManager.pdb
-D:\GitHub\ITUnity\dev\cdnManager\cdnManager\obj\Release\cdnManager.dll
-D:\GitHub\ITUnity\dev\cdnManager\cdnManager\obj\Release\cdnManager.pdb

@@ -1,6 +1,0 @@
-D:\Sandbox\cdnManager\cdnManager\bin\Debug\cdnManager.pdb
-D:\Sandbox\cdnManager\cdnManager\obj\Debug\cdnManager.dll
-D:\Sandbox\cdnManager\cdnManager\obj\Debug\cdnManager.pdb
-D:\Demos\04 - SharePoint-Hosted Apps\cdnManager\cdnManager\bin\Debug\cdnManager.pdb
-D:\Demos\04 - SharePoint-Hosted Apps\cdnManager\cdnManager\obj\Debug\cdnManager.dll
-D:\Demos\04 - SharePoint-Hosted Apps\cdnManager\cdnManager\obj\Debug\cdnManager.pdb

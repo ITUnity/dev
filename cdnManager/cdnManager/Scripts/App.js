@@ -53,7 +53,9 @@
                     });
 
                     //Create the script to inject
-                    var script = "var CDNManager = function () {" +
+                    var script = "Type.registerNamespace('CDNManager');" +
+                    "(function $_global_cdnmanager () {" +
+                    "   CDNManager = function () {" +
                     "   'use strict';" +
                     "   var load = function () {";
                     for (var i = 0; i < activeLibraries.length; i++) {
@@ -158,6 +160,7 @@
                     "     getScript: getScript" +
                     "   };" +
                     "}();" +
+                    "})();" +
                     "CDNManager.load();";
 
                     return addUserCustomAction(script);
@@ -406,8 +409,4 @@
     }
 
 }());
-
-
-
-
 

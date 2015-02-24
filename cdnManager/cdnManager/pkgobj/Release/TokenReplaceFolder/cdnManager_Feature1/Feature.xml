@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="5b08c0b2-6729-4de8-bdca-8ce1f3e0bbfe" Scope="Web" Title="cdnManager Feature1" Version="2.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\knockout-3.2.0.js" />
+    <ElementFile Location="Scripts\knockout-3.2.0.debug.js" />
+    <ElementFile Location="Scripts\jquery-2.1.3.min.map" />
+    <ElementFile Location="Scripts\jquery-2.1.3.min.js" />
+    <ElementFile Location="Scripts\jquery-2.1.3.js" />
+    <ElementFile Location="Scripts\jquery-2.1.3.intellisense.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementFile Location="Images\check.png" />
+    <ElementFile Location="Images\x.png" />
+    <ElementFile Location="Images\PROGRESS.GIF" />
+    <ElementManifest Location="CDNsInstance\Elements.xml" />
+    <ElementManifest Location="CDNs\Elements.xml" />
+    <ElementFile Location="CDNs\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="CDNsInstance\Elements.xml" />
+        <ElementManifest Location="CDNs\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>
