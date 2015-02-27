@@ -70,11 +70,11 @@
                         }
                         if (activeLibraries[i].type === "StyleSheet") {
                             script = script +
-                            "link = document.createElement('link');" +
-                            "link.href = " + activeLibraries[i].url + ";" +
-                            "link.type = 'text/css';" +
-                            "link.rel = 'stylesheet';" +
-                            "document.getElementsByTagName('header')[0].appendChild(link);";
+                            "var link" + i + " = document.createElement('link');" +
+                            "link" + i + ".href = '" + activeLibraries[i].url + "';" +
+                            "link" + i + ".type = 'text/css';" +
+                            "link" + i + ".rel = 'stylesheet';" +
+                            "document.getElementsByTagName('head')[0].appendChild(link" + i + ");";
                         }
                     }
                     script = script + " " + 
