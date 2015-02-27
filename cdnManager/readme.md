@@ -51,7 +51,7 @@ Knockout and jQuery loading simultaneously
   ```
 
 ### JSLink Files
-The CDN Manager can also be used to load references in JSLink files. If you activate the bottstrap CSS and JS that comes pre-loaded in the app, then the following code can be used to create a bootstrap progress bar in tasks lists.
+The CDN Manager can also be used to load references in JSLink files. If you activate the bootstrap CSS and JS that comes pre-loaded in the app, then the following code can be used to create a bootstrap progress bar in tasks lists.
 
   ```JavaScript
  
