@@ -16,7 +16,7 @@
           
           
         <CHOICE>JavaScript</CHOICE><CHOICE>StyleSheet</CHOICE></CHOICES>
-      </Field><Field Name="Dependency" ID="{04a2d576-f347-46a3-b26e-1f8b7e61142c}" DisplayName="Dependency" Type="Text" /><Field Name="Namespace" ID="{9a3f1497-ea79-49e3-bd5e-157ffd54a39b}" DisplayName="Namespace" Type="Text" Required="TRUE" /></Fields>
+      </Field><Field Name="Dependency" ID="{04a2d576-f347-46a3-b26e-1f8b7e61142c}" DisplayName="Dependency" Type="Text" /><Field Name="Namespace" ID="{9a3f1497-ea79-49e3-bd5e-157ffd54a39b}" DisplayName="Namespace" Type="Text" Required="FALSE" /></Fields>
     <Views>
       
       

@@ -22,15 +22,16 @@
         </Row>
         <Row>
           <Field Name="Title">bootstrap.min.js</Field>
-          <Field Name="Namespace">bootstrap</Field>
+          <Field Name="Namespace">jQuery</Field>
           <Field Name="Type">JavaScript</Field>
           <Field Name="Url">//ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.min.js</Field>
           <Field Name="Active">FALSE</Field>
           <Field Name="Sequence">2</Field>
+          <Field Name="Dependency">jquery-1.11.2.min.js</Field>
         </Row>
         <Row>
           <Field Name="Title">bootstrap.min.css</Field>
-          <Field Name="Namespace">bootstrap</Field>
+          <Field Name="Namespace"></Field>
           <Field Name="Type">StyleSheet</Field>
           <Field Name="Url">//ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/css/bootstrap.min.css</Field>
           <Field Name="Active">FALSE</Field>

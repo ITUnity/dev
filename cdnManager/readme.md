@@ -85,13 +85,12 @@ The CDN Manager can also be used to load references in JSLink files. If you acti
         }
 
         function load () {
-            CDNManager.getScript('bootstrap.min.js', ready);
+            CDNManager.getScript(['jquery-1.11.2.min.js','bootstrap.min.js'], ready);
         };
 
         function ready () {
-            console.log('bootstrap loaded');
+            jQuery('[data-toggle="tooltip"]').tooltip();
         };
-
 
     }());
 
