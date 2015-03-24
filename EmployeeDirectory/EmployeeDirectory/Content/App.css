@@ -1,0 +1,151 @@
+﻿.tab {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+table#resultsTable
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+#resultsTable th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#resultsTable td
+{
+    color: #669;
+	padding: 9px 8px 0px 8px;
+}
+
+#resultsTable tbody tr:hover td
+{
+	color: #009;
+}
+
+.tab-table {
+   border-spacing:0px;
+   margin-top: 10px;
+}
+
+.tab-tableCellUnselected {
+   border-top:none;
+   border-left:none;
+   border-right:none;
+   border-bottom: 1px solid #666666;
+}
+
+.tab-tableCellSelected {
+   border-top: 1px solid #666666;
+   border-left: 1px solid #666666;
+   border-right: 1px solid #666666;
+   border-bottom: none;
+}
+
+#resultsCell {
+    border-left:1px solid #666666;
+    border-right:1px solid #666666;
+    border-bottom:1px solid #666666;
+}
+
+#resultsDiv {
+    height:400px;
+}
+
+div#resultsTable
+{ /* supress the initial flash */
+    display: none;
+
+}
+
+/* Matt added these */
+div.srch-results {width:1000px;}
+div.srch-result 
+{
+	width: 30%; 
+	display:block;
+	border:2px solid #D0E8F4;
+	background-color:#ECF8FD;
+	float: left;
+	margin: 5px;
+    border-radius: 3px;
+			
+}
+ 
+div.srch-result:hover 
+{
+    border: 2px solid #CCC; 
+	box-shadow: 1px 1px 5px #999; 
+}
+span.srch-name {
+    display:block;
+	padding-left:85px;
+    font-size: 1.3em;
+			
+}
+span.srch-title, span.srch-dept {
+    display:block;
+	padding-left:85px;
+	font-size:.9em;
+}
+span.srch-phone a  {
+    display:block;
+	padding-left:85px;
+	font-size: .8em;
+	
+	text-decoration: none;
+}
+span.srch-phone a:hover  {
+	color: green;
+	text-decoration: underline;
+}
+div.srch-result img {
+    float: left;
+	border:1px solid #e3e3e3;
+	display:inline-block;
+    padding : 2px;
+    margin: 4px;			
+
+}
+
+a.btn-nav
+{ border: 1px solid #999;
+  padding : 4px;
+  text-decoration: none;
+  margin-right: 5px;
+  
+  background-color: #CCC
+}
+
+a.btn-nav:hover
+{ 
+    background-color: #999;
+}
+
+a.btn-nav img
+{ 
+    margin : 5px;
+    position : relative;
+    top: 8px;
+}
+
+div.srch-action
+{
+    background-color : #CCC;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0px 0px 3px 3px;
+    /*visibility: hidden;*/
+
+}

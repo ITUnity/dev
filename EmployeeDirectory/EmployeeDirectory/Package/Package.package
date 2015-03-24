@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a5ff2bf5-3e72-4b4d-ba99-4746987a4641" 
+        solutionId="a5ff2bf5-3e72-4b4d-ba99-4746987a4641" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="EmployeeDirectory"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="30ccc56f-80bf-4d6a-8eb4-5a694d53ec44" />
+  </features>
+</package>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="30ccc56f-80bf-4d6a-8eb4-5a694d53ec44" Scope="Web" Title="EmployeeDirectory Feature1" Version="1.0.0.10">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\Default2.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2-vsdoc.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.js" />
+    <ElementFile Location="Scripts\knockout-2.1.0.debug.js" />
+    <ElementFile Location="Scripts\knockout-2.1.0.js" />
+    <ElementFile Location="Scripts\ViewModels\ToolbarViewModel.js" />
+    <ElementFile Location="Scripts\ViewModels\ContactViewModel.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

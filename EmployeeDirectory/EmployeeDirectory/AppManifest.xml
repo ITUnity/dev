@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="EmployeeDirectory"
+     ProductID="{872d2d8b-4da1-442b-a15b-91170e2d2e91}"
+     Version="1.0.0.10"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>Employee Directory</Title>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+
+
+<AppPermissionRequests>
+  <AppPermissionRequest Scope="http://sharepoint/search" Right="QueryAsUserIgnoreAppPrincipal" />
+</AppPermissionRequests>
+
+</App>
