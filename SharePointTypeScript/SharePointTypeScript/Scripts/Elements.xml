@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\jquery-1.9.1.min.map" Url="Scripts/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app.ts" Url="Scripts/app.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\knockout-3.3.0.js" Url="Scripts/knockout-3.3.0.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\knockout-3.3.0.debug.js" Url="Scripts/knockout-3.3.0.debug.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\jquery\jquery.d.ts" Url="Scripts/typings/jquery/jquery.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\knockout\knockout.d.ts" Url="Scripts/typings/knockout/knockout.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\sharepoint\SharePoint.d.ts" Url="Scripts/typings/sharepoint/SharePoint.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app.js" Url="Scripts/app.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
