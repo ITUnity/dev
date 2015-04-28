@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="6375d850-8fa0-4913-8cb6-2128f51a9b57" 
+        solutionId="6375d850-8fa0-4913-8cb6-2128f51a9b57" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MinimalDownloadStrategy"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="f34e10bc-3783-4e75-b046-dc475a6e1f69" />
+  </features>
+</package>
