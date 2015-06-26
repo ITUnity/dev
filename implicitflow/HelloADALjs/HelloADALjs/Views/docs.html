@@ -1,0 +1,11 @@
+﻿<div class="row">
+    <div class="col-md-4">Name</div>
+    <div class="col-md-4">Size</div>
+    <div class="col-md-4">Modified By</div>
+</div>
+<div class="row" data-ng-repeat="document in documents">
+    <div class="col-md-4"><a data-ng-href="{{document.link}}">{{document.name}}</a></div>
+    <div class="col-md-4">{{document.size}}</div>
+    <div class="col-md-4">{{document.lastModifiedBy}}</div>
+</div>
+<div style="margin-top:15px;">{{message}}</div>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-ng-app="MyApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Hello, ADAL JS</title>
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link rel="Stylesheet" href="Content/site.css" />
+</head>
+<body>
+    <div class="container" data-ng-cloak>
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Hello ADAL JS!</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#documents">Documents</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container" data-ng-view />
+    </div>
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery-extensions.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/adal.js"></script>
+    <script src="Scripts/adal-angular.js"></script>
+    <script src="Scripts/App_Start/App.js"></script>
+    <script src="Scripts/Controllers/homeCtrl.js"></script>
+    <script src="Scripts/Controllers/docsCtrl.js"></script>
+
+</body>
+</html>
