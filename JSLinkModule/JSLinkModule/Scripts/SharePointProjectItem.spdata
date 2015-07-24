@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="jquery-1.9.1.min.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-mocks.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-route.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-route.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-route.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\app.js" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="app\jsLink.js" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="toastr.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="toastr.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\jslink\progressbar.js" Target="Scripts\app\jslink\" Type="ElementFile" />
+    <ProjectItemFile Source="app\services\profile.js" Target="Scripts\app\services\" Type="ElementFile" />
+    <ProjectItemFile Source="app\controllers\home.js" Target="Scripts\app\controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="app\services\utilities.js" Target="Scripts\app\services\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

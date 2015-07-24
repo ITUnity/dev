@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A0E79A2-ECE9-4706-87C2-B4FA07A4FFD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JSLinkModule</RootNamespace>
+    <AssemblyName>JSLinkModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{ba98d574-6a01-42e6-bcd3-d5a39f357a80}</AppFeaturePartId>
+    <WspPartId>{6b5515b3-66cf-46d5-82f8-1c8a0b6fe489}</WspPartId>
+    <WorkflowPartId>{e348cb0f-fd7a-4a39-8bb2-2392e119562f}</WorkflowPartId>
+    <CspkgPartId>{37bb4b41-cc08-4f61-8b11-2844b58320dc}</CspkgPartId>
+    <SqlPackagePartId>{ff36c796-8303-4264-b62c-ee5d1bd32851}</SqlPackagePartId>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Pages\home.html" />
+    <Content Include="Scripts\app\controllers\home.js" />
+    <Content Include="Scripts\app\services\profile.js" />
+    <Content Include="Scripts\app\services\utilities.js" />
+    <Content Include="Tasks\Elements.xml" />
+    <None Include="Content\toastr.less" />
+    <None Include="Content\toastr.scss" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90543ed5-a79b-4ab6-854c-7da29d5fe8d4}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a2a086c-4fe6-4692-8510-a6b4a4f86c4c}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\angular-route.min.js.map" />
+    <None Include="Scripts\angular.min.js.map" />
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ff36c796-8303-4264-b62c-ee5d1bd32851}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\jsLink.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\app\jslink\progressbar.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0b8df23b-edc1-40bf-993d-083256a065ef}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1d913dd8-f8c1-4b11-bf32-595c0265e71f}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{0b41efa8-b6bd-4b16-81ec-602b111fc7d3}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{b824f462-4e01-485e-a809-74b421fb72da}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+</Project>
