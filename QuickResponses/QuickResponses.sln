@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickResponses", "QuickResponses\QuickResponses.csproj", "{84B586E8-032F-476D-9368-7D9459E5BFC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickResponsesWeb", "QuickResponsesWeb\QuickResponsesWeb.csproj", "{D32A4870-0CCA-41A3-B34A-EB0629EBF2E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84B586E8-032F-476D-9368-7D9459E5BFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B586E8-032F-476D-9368-7D9459E5BFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B586E8-032F-476D-9368-7D9459E5BFC7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{84B586E8-032F-476D-9368-7D9459E5BFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B586E8-032F-476D-9368-7D9459E5BFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B586E8-032F-476D-9368-7D9459E5BFC7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D32A4870-0CCA-41A3-B34A-EB0629EBF2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32A4870-0CCA-41A3-B34A-EB0629EBF2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32A4870-0CCA-41A3-B34A-EB0629EBF2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32A4870-0CCA-41A3-B34A-EB0629EBF2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
