@@ -52,6 +52,15 @@ Knockout and jQuery loading simultaneously
 
 ### JSLink Files
 The CDN Manager can also be used to load references in JSLink files. If you activate the bootstrap CSS and JS that comes pre-loaded in the app, then the following code can be used to create a bootstrap progress bar in tasks lists.
+1. Upload the progressbar.js file into the Master Page Gallery
+  1. Set the Content Type to JavaScript Display Template
+  2. Set the Target Control Type to View
+  3. Set Standalone to Override
+  4. Set the Target Scope to the relative path to the Site Collection
+  5. Set Target List Template to 107
+2. Create a Task List
+3. Edit the page with the default view
+4. Set the JSLink property to ~site/_catalogs/masterpage/progressbar.js
 
   ```JavaScript
  

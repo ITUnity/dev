@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SharePointSiteUrl>https://sptechcon2015.sharepoint.com/sites/appdev/</SharePointSiteUrl>
+    <SharePointSiteUrl>https://spsnyc.sharepoint.com/sites/appdev/</SharePointSiteUrl>
     <ProjectView>ProjectFiles</ProjectView>
     <OfficeAndSharePointStartAction>Internet Explorer</OfficeAndSharePointStartAction>
   </PropertyGroup>
@@ -9,8 +9,8 @@
     <VisualStudio>
       <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
         <ProjectStore>
-          <AppInstancePackageModifiedTime>2015-02-27T13:37:13.8651965Z</AppInstancePackageModifiedTime>
-          <AppInstanceId>02cb6453-f5b0-4c5e-9ffb-f30a30762b5b</AppInstanceId>
+          <AppInstanceId>00a73d82-44b1-4557-8db0-06fc71052656</AppInstanceId>
+          <AppInstancePackageModifiedTime>2015-06-02T13:18:42.7622185Z</AppInstancePackageModifiedTime>
         </ProjectStore>
       </FlavorProperties>
     </VisualStudio>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <title>Hello Excel 2016</title>
+
+    <!-- Office UI Fabric -->
+    <link rel="stylesheet" href="//appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+    <link rel="stylesheet" href="//appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css">
+
+    <!-- Other style sheets -->
+    <link href=" ../Content/Office.css" rel="stylesheet" type="text/css" />
+    <link href="content/app.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+    <!-- UI -->
+    <div data-ng-controller="mainCtrl">
+        <div class="ms-Grid">
+            <div class="ms-Grid-row" style="padding-bottom:5px;">
+                <div class="ms-Grid-col ms-u-md6">
+                    <button class="ms-Button ms-Button--primary" data-ng-click="getCells()">
+                        <span class="ms-Button-label">Get A1:B2</span>
+                    </button>
+                </div>
+                <div class="ms-Grid-col ms-u-md6">
+                    <button class="ms-Button ms-Button--primary" data-ng-click="copyCells()">
+                        <span class="ms-Button-label">Set C1:D2</span>
+                    </button>
+                </div>
+            </div>
+            <div class="ms-Grid-row" data-ng-repeat="cell in cells">
+                <div class="ms-Grid-col ms-u-md4">
+                    {{cell.col}}
+                </div>
+                <div class="ms-Grid-col ms-u-md4">
+                    {{cell.row}}
+                </div>
+                <div class="ms-Grid-col ms-u-md4">
+                    {{cell.value}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- third-party libs -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="//secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/adal.min.js"></script>
+    <script src="//secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/adal-angular.min.js"></script>
+    <script src="//appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- custom code -->
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>

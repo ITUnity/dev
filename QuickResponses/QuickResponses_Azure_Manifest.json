@@ -1,0 +1,76 @@
+{
+  "appId": "f15c9c8f-73f8-4766-adb9-785f5d081390",
+  "appRoles": [],
+  "availableToOtherTenants": false,
+  "displayName": "Quick Responses",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://localhost:44300/",
+  "identifierUris": [
+    "https://shillier.onmicrosoft.com/QuickResponses"
+  ],
+  "keyCredentials": [],
+  "knownClientApplications": [],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": true,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access Quick Responses on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access Quick Responses",
+      "id": "783ffe9a-672e-48bb-bb0f-8fc15e6f099b",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access Quick Responses on your behalf.",
+      "userConsentDisplayName": "Access Quick Responses",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": null,
+      "endDate": "2016-09-11T12:07:07.3647919Z",
+      "keyId": "079339e0-32dc-47f9-8b80-c477eae4190c",
+      "startDate": "2015-09-11T12:07:07.3647919Z",
+      "value": null
+    }
+  ],
+  "publicClient": null,
+  "replyUrls": [
+    "https://localhost:44300/"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "b3f70a70-8a4b-4f95-9573-d71c496a53f4",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [],
+  "objectType": "Application",
+  "objectId": "959e54e4-f53d-4191-a19e-f35448588e6f",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [],
+  "manager": null,
+  "directReports": [],
+  "members": [],
+  "memberOf": [],
+  "owners": [],
+  "ownedObjects": []
+}
