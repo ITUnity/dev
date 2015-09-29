@@ -1,0 +1,460 @@
+﻿	/* Employee Directory CSS       */
+/* =========================================================================== */
+
+
+/* ----------------------------------------------------------------------------*/
+/*Sized under 1000px*/
+@media screen and (max-width: 600px) {
+ #detailPanel{display: none;}
+ 
+ #refinerPanel{display: none;width: 0px;}
+ 
+ #contentPanel{left: 0px; overflow-y:auto;}
+ 
+ #profileHeaderContainer{left: 0px; max-height:145px;}
+ 
+ #cardPanel{ width: 100%;overflow-y: auto;}
+ #contentBody{left: 0px; top:150px;}
+ 
+ #profileHeaderContainerName{
+	color:white;
+	padding-left:20px;
+	line-height: 40px; 
+	font-size:24px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+	}
+ #profileHeaderSubTitle{
+ 	visibility:hidden;
+ 	line-height:0px;
+ }
+ #profileHeaderSubTitleEdit{
+ 	visibility:visible;
+ 	padding-left:20px;
+ 	color:white;
+	font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+ }
+ 
+ #profileHeaderSubTitleEdit input{
+ 	color:black;
+	font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+	margin-left:5px;
+ }
+ 
+ #cardPanel{
+ 	overflow:visible;
+ 	height:100%;
+ 	background:whitesmoke;
+ 	padding-bottom:40px;
+	}
+
+ #cardBox
+ {
+ 	width:95%
+ }
+ 
+ #cardPanelUL
+ {
+
+  -webkit-padding-start: 0px;
+ }
+}
+
+ 
+
+/*Sized under 1000px*/
+@media screen and (max-width: 1000px) {
+  #detailPanel{display: none;}
+  #cardPanel{right: 0px;}
+  #RefinerLetter {display: none}
+
+}
+
+
+.suiteBar {position: fixed; background-color: black; width: 100%; height: 50px;color: white; text-align: center; line-height: 40px;}
+.mainBody {
+	padding: 0px;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    position: fixed;
+	top:50px;}
+	
+.appBody
+{
+	overflow: scroll;
+    position: relative;
+    background: #eaeaea;
+    height: 100%;
+}
+.refinerPanel {
+
+    width: 241px;
+    background: white;
+    background-size:100%;
+    min-height: 550px;
+    /* top: 90; */
+    bottom: 0;
+    /* margin-left: 10px; */
+    /* padding-left: 10PX; */
+    padding: 10px;
+    min-height: 100%;
+    position: relative;
+    margin: 0px;
+    border: 0px;
+    }
+    
+.refinerCategory{
+	color: rgb(0, 114, 198);
+	display: inline;
+	font-family: 'Segoe UI Web Semibold', 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+.contentPanel {
+   
+    position: absolute;
+    background-color: #eaeaea;
+    background-overflow:visible;
+    min-height: 100px;
+    padding: 0px;
+    top: 0px;
+    left: 240px;
+    height: 100%;
+    width: 100%;   
+
+    }
+/*.contentPanel { border: 1px solid #999999; padding: 1px; width: 300px; height:600px; float:left; background-color: blueviolet}*/
+.profileHeaderContainer
+{
+
+    position: absolute;
+    left: 0px;
+    padding-left: 0px;    
+    right: 0px;
+    min-width: 320px;
+    height: 220px;
+    color: white;
+    vertical-align: middle;
+    background-image:url("../Images/backgroundimagelargealternate_eeaba604.jpg");
+}
+
+
+.contentBody {
+        top: 200px;
+    position: absolute;
+    left: 0px;
+    /* padding-left: 20px; */
+    /* right: 0px; */
+    /* z-index: 1; */
+    /* min-width: 320px; */
+    /* background-color: whitesmoke; */
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;    
+    }
+    
+.cardPanel { 
+	 position: absolute;
+    /* top: 250px; */
+    left: 0;
+    /* margin-left: 0; */
+    padding: 10px;
+    margin: 0px;
+    background-color: #eaeaea;
+    /* min-height: 400px; */
+    /* height: 600px; */
+    /* right: 240px; */
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+
+    margin-right: 270px;
+    margin-top: 20px; 
+}
+
+.cardPanelUL
+ {
+	padding-left:0px;
+  -webkit-padding-start: 0px;
+ }
+
+.cardBox
+{
+ 	 	border-style: solid;
+		border-color: rgba(0, 0, 0, 0);
+		border-width: 2px;
+		background-clip: padding-box;
+		background-color: rgb(241, 241, 241);
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		color: rgb(51, 51, 51);
+		cursor: pointer;
+		display: inline-block;
+		font-family: 'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		height: 125px;
+		list-style-type: none;
+		margin-bottom: 7px;
+		margin-left: 0px;
+		margin-right: 6px;
+		margin-top: 0px;
+		opacity: 1;
+		position: relative;
+		text-align: left;
+		text-decoration: none;
+		transition-delay: 0s;
+		transition-duration: 0.1s;
+		transition-property: border-color;
+		transition-timing-function: ease;
+		width: 270px;
+	    vertical-align: top;
+   		padding: 10px;
+    }
+
+.cardBox:hover
+{
+	background:#d8d8d8;
+
+}
+
+.cardTitle
+{
+    list-style: none;
+
+    font-weight: 600;
+}
+
+.cardText
+{
+	list-style: none;
+    min-width: 250px;
+}
+
+.PersonDetailMemberships
+{
+	font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+	padding-left:0px;
+	list-style: none;
+    min-width: 250px;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+.PersonDetailHeader
+{
+	list-style: none;
+    margin-left: 0px;
+    min-width: 250px;
+    line-height:24px;
+    font-weight:600;
+    margin-top:15px;
+
+}
+
+.PersonDetailLinks
+{
+	list-style: none;
+    margin-left: 20px;
+    min-width: 250px;
+    line-height:24px;
+    font-weight:400;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+
+a.RefinerLetter {
+    width: 100%;
+    padding: 8px;
+    align-content: ;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    margin-right: 10px;
+    align-content: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+a.RefinerLetter:hover {
+    width: 100%;
+    padding: 8px;
+    align-content: ;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    align-content: center;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.cardPhoto
+{
+    /* margin-left: 150; */
+    /* margin-top: 45px; */
+    border-radius: 50%;
+    border: 1px solid #eee;
+    max-width: 100%;
+    height: 60px;
+    width: 60px;
+    /* float: right; */
+    position: absolute;
+    bottom: 5;
+    right: 5;
+  }
+
+.cardDelve{
+    height: 25px;
+    width: 25px;
+    /* float: left; */
+    position: absolute;
+    bottom: 20px;
+}
+
+.refinerItem
+{
+	font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+    margin-left: -20px;}
+.cardOrg{
+    height: 25px;
+    width: 25px;
+    /* float: left; */
+    position: absolute;
+    bottom: 20px;
+    left:55px;
+    }
+.detailPanel {     
+    border: 1px solid #999999;
+    margin-top: 20px;
+    right: 0px !;
+    padding: 10px;
+    background-color: white;
+    width: 260px;
+    min-height: 100%;
+    position: absolute;
+    visibility: visible;
+    /* z-index: 9; */
+    right: 240;  }
+    
+.profileHeaderContainerName{
+	color:white;
+	padding-left:50px;
+	line-height:90px;
+	font-size:42px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+	}
+    
+ .profileHeaderSubTitle{
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    padding-top: -30px;
+ 	visibility:visible;
+ }
+ 
+  .profileHeaderSubTitleEdit{
+ 	visibility:hidden;
+ }
+
+.Header-actions{
+	line-height: 40px;
+    margin-top: 40px;
+    background-color: black;
+    opacity: .4;    
+    padding-left:50px;
+    }
+
+.srchbox          { font-family: verdana; border: 2px solid #999999; background-color: transparent }
+
+
+.Black
+{
+    color: black;
+}
+
+
+.mainbox, .sidebarbox { border: 3px solid #999999; padding: 1px; }
+.sidebar          { font-family: arial; font-size: 8pt }
+.indexsitetitle   { color: #006600; font-size: 16pt; line-height: 20pt }
+.colheaders       { font-size: 14pt; color: #ffffff; text-decoration: none }
+.field            { background-color: #999999 }
+.sbalert          { color: #990000 }
+                    
+/* What:          Page Appearance rules                                        */
+/* ----------------------------------------------------------------------------*/
+body              { margin: 0px;  }   
+
+body, div, dl, dt, dd, ul, ol, li, td, th, .text      
+                  { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;
+    line-height: 1.42857143;     color: #333; } 
+.gc1, .gc2        { color: #006600; font-weight: bold }  
+.gc2              { text-align: center }
+hr                { color: #333333 }
+a:link, a:visited { color: #003333; font-weight: bold }
+a:hover           { color: #003333; background: #ffffff; font-weight: bold }
+
+/* What:          Page Titles, Headers, Important Info, Generic Font Sizing    */
+/* ----------------------------------------------------------------------------*/
+.pagetitle        { color: #000000; font-size: 22pt }
+.subtitle         { color: #006600; font-size: 22pt }
+.sitetitle        { color: #000080 }
+
+.mainheading      { font-size: 15pt; color: #000066; background-color: #7CADB4; font-family: arial, geneva, sans-serif; font-weight: bold }   
+.subheading       { font-size: 13pt; color: #009999; font-weight: bold }   
+.l3heading        { color: #660000; font-weight: bold }
+
+.alert, .quotation{ background-color: #ffff66; color: #000000 }
+.alert2           { background-color: #ffffff; color: #000000; font-style: normal }
+.magicword        { color: #ff0000; font-weight: bold }
+.unselected       { color: #999999 }
+
+.smalltext        { font-size: 9pt }
+.reallysmall      { font-size: 8pt }
+.largetext        { font-size: 15pt }
+
+/* What:          Specific Page Titles, Headers and Subheaders, and Font       */
+/* ----------------------------------------------------------------------------*/
+.entityheader     { font-size: 10pt; color: #006600; font-weight: bold }
+.taghead          { font-size: 11pt; color: #003333 }
+.attribhead       { font-size: 11pt; color: #006600 }
+.supporthead      { font-size: 11pt; color: #990000 }
+.tagindexhead     { font-size: 22pt; border: medium solid #009900; padding: 0px }
+.example          { background-color: #D2B48C; border: thin solid #000099; padding:5px; margin-top: 5px; }
+
+/* What:          Meaningful HTML/CSS syntax                                   */
+/* ----------------------------------------------------------------------------*/
+.tagname       { color: #000066; font-weight: bold }
+.tagattrib     { color: #660000 }
+.selector      { color: #660000; font-weight: bold }
+.property      { color: #006600; font-weight: bold }
+.atrule        { color: #000066; font-weight: bold }
+
+/* What:          Specification/Browser Support Information                    */
+/* ----------------------------------------------------------------------------*/
+.fs            { font-style: italic; font-weight: bold; color: #990000; background-color: #3CB371 }
+.s             { color: #ffffff; background-color: #3CB371 }
+.sr            { color: #ffffff; background-color: #000000; border: 2px solid #990000; text-decoration: none }
+.ns            { color: #999999 }
+.colorname     { color: #660000; font-size: xx-small }
+.colorvalue    { color: #000000; font-size: x-small }
+
+/* What:          Special rules                                                */
+/* ----------------------------------------------------------------------------*/
+.relevant     { color: #000066; font-weight: bold }
+a.relevant    { color: #006666; font-weight: bold }
+.external     { color: #009900 }
