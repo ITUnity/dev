@@ -14,10 +14,11 @@
 	<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexprereq_535a70ad.js"></script>
 
 	<!--SharePoint Init - Required for SuiteBar-->
-	<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4420.1224/init.js"></script>
-
+	<script type="text/javascript" src="https://cdn.sharepointonline.com/16106/_layouts/15/16.0.4508.1220/init.js"></script>
+	
 	<!--SharePoint Online SuiteNav - Required for SuiteBar-->
-	<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4420.1224//online/scripts/sposuitenav.js"></script>
+	<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4420.1224/online/scripts/sposuitenav.js"></script>
+	
 	<!--End SharePoint Online SuiteBar Support-->
 
 

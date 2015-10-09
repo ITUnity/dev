@@ -16,16 +16,17 @@
 		<!--font awesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
-		<!--SharePoint Online Links -->
-		<link type="text/css" rel="stylesheet" href="https://r3.res.outlook.com/o365/versionless/wexstyles_e33c2966.css" />
-		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexprereq_86fff609.js"></script>
-		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/jsmvvm_d380fc7f.js"></script>
-		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexstrings_3682b144.js"></script>
-		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexpulse_a84c21f4.js"></script>
-		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wex_e563c15b.js"></script>
-		<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4208.1226/init.js"></script>
-		<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4208.1226//online/scripts/sposuitenav.js"></script>
+		<!--SharePoint Online SuiteBar Support -->
+		<!--WEX PreReq - Required for SuiteBar-->
+		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexprereq_535a70ad.js"></script>
+	
+		<!--SharePoint Init - Required for SuiteBar-->
+		<script type="text/javascript" src="https://cdn.sharepointonline.com/16106/_layouts/15/16.0.4508.1220/init.js"></script>
+		
+		<!--SharePoint Online SuiteNav - Required for SuiteBar-->
+		<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4420.1224/online/scripts/sposuitenav.js"></script>
+		
+		<!--End SharePoint Online SuiteBar Support-->
 
 		<!-- SharePoint Js Libs -->
 		<script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
