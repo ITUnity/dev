@@ -217,9 +217,9 @@
 							 		<li class="CardTitle">{{x.PreferredName}}</li>
 							 		<li class="CardText"> </li>
 							 		<li class="CardText">{{x.Department}}</li>
-							 		<li class="CardText"><img class="CardPhoto" src="https://outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email={{x.WorkEmail}}"/></li>
-							 		<li class="CardText"><a href="{{x.DelveURL}}"><img class="CardDelve" src="Images/delve.png"/></a></li>
-							 		<li class="CardText"><a href="{{x.Path}}"><img class="CardOrg" src="Images/org.png"/></a></li>
+							 		<li class="CardText"><img class="CardPhoto" src="//outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email={{x.WorkEmail}}"/></li>
+							 		<li class="CardText"><a href="{{x.DelveURL}}" target="_delve"><img class="CardDelve" src="Images/delve.png"/></a></li>
+							 		<li class="CardText"><a href="{{x.Path}}" target="_delve"><img class="CardOrg" src="Images/org.png"/></a></li>
 							 		
 							 	</ul>	
 							 </li>

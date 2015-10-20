@@ -61,6 +61,7 @@ app.controller('myCtrl', function($scope){
          $scope.currentDoc = null;
     }
 	
+   
 	//item selected event
 	$scope.itemSelected=function(person){
         
@@ -224,7 +225,7 @@ app.controller('myCtrl', function($scope){
             
             	var ResultList = []
 	             $.each(results, function (index, result) {
-	             	var delveUrl = "https://micronets2015b-my.sharepoint.com/_layouts/15/me.aspx?p=" + encodeURIComponent(result.Cells.results[21].Value) + "&v=work";
+	             	var delveUrl = _spPageContextInfo.webAbsoluteUrl.split(".")[0] + "-my.sharepoint.com/_layouts/15/me.aspx?p=" + encodeURIComponent(result.Cells.results[10].Value) + "&v=work";
 	             	ResultList.push({Department:result.Cells.results[2].Value,JobTitle:result.Cells.results[3].Value,Memberships:result.Cells.results[4].Value.split(";"),Path:result.Cells.results[5].Value,PictureURL:result.Cells.results[6].Value,PreferredName:result.Cells.results[7].Value,SipAddress:result.Cells.results[8].Value,Skills:result.Cells.results[9].Value,WorkEmail:result.Cells.results[10].Value,WorkPhone:result.Cells.results[11].Value,MobilePhone:result.Cells.results[12].Value,OfficeNumber:result.Cells.results[13].Value,HierarchyUrl:result.Cells.results[14].Value,DelveURL:delveUrl,DocId:result.Cells.results[1].Value });
                 });
 			
