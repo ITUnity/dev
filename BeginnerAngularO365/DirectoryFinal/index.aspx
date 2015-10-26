@@ -16,21 +16,23 @@
 		<!--font awesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
-		<!--SharePoint Online SuiteBar Support -->
+		<!-- Begin SharePoint Online SuiteBar Support -->
 		<!--WEX PreReq - Required for SuiteBar-->
-		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexprereq_535a70ad.js"></script>
+		<script type="text/javascript" src="https://r3.res.outlook.com/o365/versionless/wexprereq_86fff609.js"></script>
 	
-		<!--SharePoint Init - Required for SuiteBar-->
-		<script type="text/javascript" src="https://cdn.sharepointonline.com/16106/_layouts/15/16.0.4508.1220/init.js"></script>
 		
-		<!--SharePoint Online SuiteNav - Required for SuiteBar-->
-		<script type="text/javascript" src="https://cdn.sharepointonline.com/16148/_layouts/15/16.0.4420.1224/online/scripts/sposuitenav.js"></script>
+		<!--SharePoint Init - Required for SuiteBar-->
+		<SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
+		
+	
 		
 		<!--End SharePoint Online SuiteBar Support-->
+		<!--SharePoint Online Links -->
+		<link type="text/css" rel="stylesheet" href="https://r3.res.outlook.com/o365/versionless/wexstyles_e33c2966.css" />
+
 
 		<!-- SharePoint Js Libs -->
-		<script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
-		<script type="text/javascript" src="/_layouts/15/sp.js"></script>
+		
 		<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
 
 		<!--Loading spinner for image preview-->
@@ -51,6 +53,9 @@
 	<body>
 		
 		<!--suite bar start -->
+<form id="form1" runat="server">
+			<SharePoint:DelegateControl id="ID_SuiteLinksDelegate" ControlId="SuiteLinksDelegate" runat="server" />
+		</form>
 		<div id="suiteBarTop" class="ms-fullWidth ms-TopBarBackground-bgColor" style="height:50px; position:absolute;left=0px;background-color:black;">
 		</div>
     	<div id="shellTop" style="position:fixed;z-index:2"></div>
@@ -212,9 +217,9 @@
 							 		<li class="CardTitle">{{x.PreferredName}}</li>
 							 		<li class="CardText"> </li>
 							 		<li class="CardText">{{x.Department}}</li>
-							 		<li class="CardText"><img class="CardPhoto" src="https://outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email={{x.WorkEmail}}"/></li>
-							 		<li class="CardText"><a href="{{x.DelveURL}}"><img class="CardDelve" src="Images/delve.png"/></a></li>
-							 		<li class="CardText"><a href="{{x.Path}}"><img class="CardOrg" src="Images/org.png"/></a></li>
+							 		<li class="CardText"><img class="CardPhoto" src="//outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email={{x.WorkEmail}}"/></li>
+							 		<li class="CardText"><a href="{{x.DelveURL}}" target="_delve"><img class="CardDelve" src="Images/delve.png"/></a></li>
+							 		<li class="CardText"><a href="{{x.Path}}" target="_delve"><img class="CardOrg" src="Images/org.png"/></a></li>
 							 		
 							 	</ul>	
 							 </li>
