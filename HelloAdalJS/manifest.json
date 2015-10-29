@@ -1,0 +1,68 @@
+{
+  "appId": "cb31dc6a-299e-45d5-821f-124e2d9eb15d",
+  "appRoles": [],
+  "availableToOtherTenants": false,
+  "displayName": "Hello ADAL JS",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://localhost:44300/",
+  "identifierUris": [
+    "https://shillier.onmicrosoft.com/HelloADALJS"
+  ],
+  "keyCredentials": [],
+  "knownClientApplications": [],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": true,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access Hello ADAL JS on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access Hello ADAL JS",
+      "id": "0804006f-98ba-4df0-ad6a-5158ca0f18fe",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access Hello ADAL JS on your behalf.",
+      "userConsentDisplayName": "Access Hello ADAL JS",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [],
+  "publicClient": null,
+  "replyUrls": [
+    "https://localhost:44300/"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [],
+  "objectType": "Application",
+  "objectId": "57db7841-b08c-4e60-abea-ff3c4a9e780c",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [],
+  "manager": null,
+  "directReports": [],
+  "members": [],
+  "memberOf": [],
+  "owners": [],
+  "ownedObjects": []
+}
