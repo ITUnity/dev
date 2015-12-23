@@ -1,0 +1,27 @@
+﻿<div>
+    <div class="ms-Grid">
+        <div class="ms-Grid-row" style="padding-bottom:5px;">
+            <div class="ms-Grid-col ms-u-md6">
+                <button class="ms-Button ms-Button--primary" (click)="getRangeValues('A1:B2')">
+                    <span class="ms-Button-label">Get A1:B2</span>
+                </button>
+            </div>
+            <div class="ms-Grid-col ms-u-md6">
+                <button class="ms-Button ms-Button--primary" (click)="setRangeValues('A4:B5')">
+                    <span class="ms-Button-label">Set C1:D2</span>
+                </button>
+            </div>
+        </div>
+        <div class="ms-Grid-row" *ngFor="#cell of formattedData">
+            <div class="ms-Grid-col ms-u-md4">
+                {{cell.col}}
+            </div>
+            <div class="ms-Grid-col ms-u-md4">
+                {{cell.row}}
+            </div>
+            <div class="ms-Grid-col ms-u-md4">
+                {{cell.value}}
+            </div>
+        </div>
+    </div>
+</div>
