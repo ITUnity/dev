@@ -1,0 +1,15 @@
+﻿<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Angular OpenID Connect</a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li *ngIf="!isAuthenticated"><button (click)="logIn()" type="button" class="btn btn-default" style="margin-top:5px;">Log In</button></li>
+                <li *ngIf="isAuthenticated"><button (click)="logOut()" type="button" class="btn btn-default" style="margin-top:5px;">Log Out</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <h3 *ngIf="isAuthenticated">Welcome, {{fullName}}!</h3>
+    <h3 *ngIf="!isAuthenticated">Please log in</h3>
+</div>
