@@ -1,0 +1,319 @@
+﻿	/* Employee Directory CSS       */
+/* =========================================================================== */
+
+
+/* ----------------------------------------------------------------------------*/
+
+.suiteBar {position: fixed; background-color: black; width: 100%; height: 50px;color: white; text-align: center; line-height: 40px;}
+.mainBody {
+	padding: 0px;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    position: fixed;
+	top:50px;}
+	
+.appBody
+{
+	overflow: scroll;
+    position: relative;
+    background: #eaeaea;
+    height: 100%;
+}
+.refinerPanel {
+
+    width: 241px;
+    color: white;
+    background: purple;
+    background-size:100%;
+    min-height: 550px;
+    bottom: 0;
+    padding: 10px;
+    min-height: 100%;
+    position: relative;
+    margin: 0px;
+    border: 0px;
+    }
+    
+.refinerCategory{
+	color: rgb(0, 114, 198);
+	display: inline;
+	font-family: 'Segoe UI Web Semibold', 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+.contentPanel {
+   
+    position: absolute;
+    background-color: #eaeaea;
+    background-overflow:visible;
+    min-height: 100px;
+    padding: 0px;
+    top: 0px;
+    left: 240px;
+    height: 100%;
+    width: 100%;   
+
+    }
+/*.contentPanel { border: 1px solid #999999; padding: 1px; width: 300px; height:600px; float:left; background-color: blueviolet}*/
+.profileHeaderContainer
+{
+
+    position: absolute;
+    left: 0px;
+    padding-left: 0px;    
+    right: 0px;
+    min-width: 320px;
+    height: 220px;
+    background:  orange;
+    color: white;
+    vertical-align: middle;
+    /*background-image:url("../Images/backgroundimagelargealternate_eeaba604.jpg");*/
+}
+
+
+.contentBody {
+     top: 200px;
+    position: absolute;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background: teal;
+    bottom: 0px;
+    }
+    
+.cardPanel { 
+	 position: absolute;
+    left: 0;
+    padding: 10px;
+    margin: 0px;
+    background-color: #eaeaea;
+     right: 240px; 
+     background: deeppink;
+    bottom: 0px;
+    top: 77px;
+    margin-right: 270px;
+    margin-top: 20px; 
+}
+
+.cardPanelUL
+ {
+	padding-left:0px;
+  -webkit-padding-start: 0px;
+ }
+
+.cardBox
+{
+ 	 	border-style: solid;
+		border-color: rgba(0, 0, 0, 0);
+		border-width: 2px;
+		background-clip: padding-box;
+		background-color: rgb(241, 241, 241);
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		color: rgb(51, 51, 51);
+		cursor: pointer;
+		display: inline-block;
+		font-family: 'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		height: 125px;
+		list-style-type: none;
+		margin-bottom: 7px;
+		margin-left: 0px;
+		margin-right: 6px;
+		margin-top: 0px;
+		opacity: 1;
+		position: relative;
+		text-align: left;
+		text-decoration: none;
+		transition-delay: 0s;
+		transition-duration: 0.1s;
+		transition-property: border-color;
+		transition-timing-function: ease;
+		width: 270px;
+	    vertical-align: top;
+   		padding: 10px;
+    }
+
+.cardBox:hover
+{
+	background:#d8d8d8;
+
+}
+
+.cardTitle
+{
+    list-style: none;
+
+    font-weight: 600;
+}
+
+.cardText
+{
+	list-style: none;
+    min-width: 250px;
+}
+
+.PersonDetailMemberships
+{
+	font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+	padding-left:0px;
+	list-style: none;
+    min-width: 250px;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+.PersonDetailHeader
+{
+	list-style: none;
+    margin-left: 0px;
+    min-width: 250px;
+    line-height:24px;
+    font-weight:600;
+    margin-top:15px;
+
+}
+
+.PersonDetailLinks
+{
+	list-style: none;
+    margin-left: 20px;
+    min-width: 250px;
+    line-height:24px;
+    font-weight:400;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+
+a.RefinerLetter {
+    width: 100%;
+    padding: 8px;
+    align-content: ;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    margin-right: 10px;
+    align-content: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+a.RefinerLetter:hover {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    align-content: center;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.cardPhoto
+{
+    /* margin-left: 150; */
+    /* margin-top: 45px; */
+    border-radius: 50%;
+    border: 1px solid #eee;
+    max-width: 100%;
+    height: 60px;
+    width: 60px;
+    /* float: right; */
+    position: absolute;
+    bottom: 5;
+    right: 5;
+  }
+
+.cardDelve{
+    height: 25px;
+    width: 25px;
+    /* float: left; */
+    position: absolute;
+    bottom: 20px;
+}
+
+.refinerItem
+{
+	font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+    margin-left: -20px;}
+.cardOrg{
+    height: 25px;
+    width: 25px;
+    /* float: left; */
+    position: absolute;
+    bottom: 20px;
+    left:55px;
+    }
+.detailPanel {     
+    border: 1px solid #999999;
+    margin-top: 20px;
+    right: 0px !;
+    padding: 10px;
+    background-color: dodgerblue;
+    width: 260px;
+    position: absolute;
+    visibility: visible;
+    right: 240;
+    bottom: 0px;
+    top: 77px;
+}
+    
+.profileHeaderContainerName{
+	color:white;
+	padding-left:50px;
+	line-height:90px;
+	font-size:42px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+	}
+    
+ .profileHeaderSubTitle{
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    padding-top: -30px;
+ 	visibility:visible;
+ }
+ 
+  .profileHeaderSubTitleEdit{
+ 	visibility:hidden;
+ }
+
+.Header-actions{
+	line-height: 40px;
+    margin-top: 40px;
+    background-color: black;
+    opacity: .4;    
+    padding-left:50px;
+    }
+
+.srchbox          { font-family: verdana; border: 2px solid #999999; background-color: transparent }
+
+
+.Black
+{
+    color: black;
+}
+
+
+body              { margin: 0px;  }   
+
+body, div, dl, dt, dd, ul, ol, li, td, th, .text      
+                  { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;
+    line-height: 1.42857143;     color: #333; } 
