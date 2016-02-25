@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
+    "systemjs": "0.19.6",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10",
+    "bootstrap": "3.3.6",
+    "jquery": "2.1.4",
+    "requirejs": "2.1.22",
+    "jwt-decode": "1.5.1",
+    "jsrsasign": "5.0.5",
+    "xmljson": "0.2.0"
+  }
+}

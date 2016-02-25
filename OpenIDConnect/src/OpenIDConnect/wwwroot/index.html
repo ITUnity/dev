@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenIDConnect</title>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/rxjs/bundles/rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="scripts/jsrsasign-latest-all-min.js"></script>
+    <script src="scripts/xml2json.js"></script>
+    <script>
+        System.config({
+            packages: {
+                'app': {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot').then(null, console.error.bind(console));
+    </script>
+
+</head>
+<body>
+    <app-main>Loading...</app-main>
+</body>
+</html>

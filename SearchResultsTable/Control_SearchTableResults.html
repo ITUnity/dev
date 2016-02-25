@@ -26,7 +26,7 @@ _#-->
 
             function getDropDownArrowHtml(alttext) { 
                 return String.format('<img src="{0}" class="ms-core-menu-arrow" alt="{1}" />', 
-                    $urlHtmlEncodeString(arwImageUrl),
+                    $urlHtmlEncode(arwImageUrl),
                     $htmlEncode(alttext)
                 );
             }
@@ -144,7 +144,7 @@ _#-->
                         var advLangSettingsUrl = ctx.ScriptApplicationManager.states['userAdvancedLanguageSettingsUrl'];
                         if (!Srch.U.e(advLangSettingsUrl)) {
                             var settingsLinkHtml = String.format('<span><a class="ms-searchNotification" href="{0}">{1}</a></span>',
-                                $urlHtmlEncodeString(advLangSettingsUrl),
+                                $urlHtmlEncode(advLangSettingsUrl),
                                 $htmlEncode(Srch.Res.rs_SelectPreferredSearchLanguage_Language)
                             );
                             langPrefHtml = String.format($htmlEncode(Srch.Res.rs_SelectPreferredSearchLanguage), settingsLinkHtml);
@@ -237,7 +237,7 @@ _#-->
 _#-->                
                                 <div class="ms-srch-result-personalResult">
                                     <div class="ms-srch-result-personalResult-prompt">_#= $htmlEncode(Srch.Res.qs_PersonalResultTitleSingular) =#_</div>                                    
-                                    <a id="PersonalResult" class="ms-textLarge" href="_#= $urlHtmlEncodeString(pfRow.Url) =#_">_#= Srch.U.trimTitle(pfTitle, Srch.U.titleTruncationLength, 2) =#_</a>
+                                    <a id="PersonalResult" class="ms-textLarge" href="_#= $urlHtmlEncode(pfRow.Url) =#_">_#= Srch.U.trimTitle(pfTitle, Srch.U.titleTruncationLength, 2) =#_</a>
                                 </div>
 <!--#_ 
                             }
@@ -256,10 +256,10 @@ _#-->
                     }
                 }
                 if (Srch.U.isPageInEditMode()){
-                    var sourcesHtml = "<a href='" + $urlHtmlEncodeString(ctx.ScriptApplicationManager.get_resultSourcesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_ResultSources) + "</a>";
-                    var displayTemplatesHtml = "<a href='" + $urlHtmlEncodeString(ctx.ScriptApplicationManager.get_displayTemplatesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_DisplayTemplate) + "</a>";
-                    var resultTypesHtml = "<a href='" + $urlHtmlEncodeString(ctx.ScriptApplicationManager.get_resultTypesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_ResultType) + "</a>";
-                    var queryRulesHtml = "<a href='" + $urlHtmlEncodeString(ctx.ScriptApplicationManager.get_queryRulesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_QueryRules) + "</a>";
+                    var sourcesHtml = "<a href='" + $urlHtmlEncode(ctx.ScriptApplicationManager.get_resultSourcesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_ResultSources) + "</a>";
+                    var displayTemplatesHtml = "<a href='" + $urlHtmlEncode(ctx.ScriptApplicationManager.get_displayTemplatesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_DisplayTemplate) + "</a>";
+                    var resultTypesHtml = "<a href='" + $urlHtmlEncode(ctx.ScriptApplicationManager.get_resultTypesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_ResultType) + "</a>";
+                    var queryRulesHtml = "<a href='" + $urlHtmlEncode(ctx.ScriptApplicationManager.get_queryRulesUrl()) + "' target='_blank'>" + $htmlEncode(Srch.Res.rs_Edit_QueryRules) + "</a>";
                     var configureResultsUrl = "javascript:HelpWindowKey(\"WSSEndUser_ConfigureResultsWPInEditMode\")";
                     var configureResultsLink = "<a href=" + configureResultsUrl + ">" + $htmlEncode(Srch.Res.rs_Edit_ConfigureSearchResults_Link) + "</a>";  
 _#--> 
@@ -381,7 +381,7 @@ _#-->
 _#-->
                                     <li id="PagingImageLink"><a id="PageLinkPrev" href="#" class="ms-commandLink ms-promlink-button ms-promlink-button-enabled ms-verticalAlignMiddle" title="_#= $htmlEncode(pl.title) =#_" onclick="$getClientControl(this).page(_#= $htmlEncode(pl.startItem) =#_);return Srch.U.cancelEvent(event);">
                                         <span class="ms-promlink-button-image">
-                                            <img src="_#= $urlHtmlEncodeString(imagesUrl) =#_" class="_#= $htmlEncode(iconClass) =#_" alt="_#= $htmlEncode(pl.title) =#_" />
+                                            <img src="_#= $urlHtmlEncode(imagesUrl) =#_" class="_#= $htmlEncode(iconClass) =#_" alt="_#= $htmlEncode(pl.title) =#_" />
                                         </span>
                                     </a></li>
 <!--#_ 
@@ -390,7 +390,7 @@ _#-->
 _#-->
                                     <li id="PagingImageLink"><a id="PageLinkNext" href="#" class="ms-commandLink ms-promlink-button ms-promlink-button-enabled ms-verticalAlignMiddle" title="_#= $htmlEncode(pl.title) =#_" onclick="$getClientControl(this).page(_#= $htmlEncode(pl.startItem) =#_);return Srch.U.cancelEvent(event);">
                                         <span class="ms-promlink-button-image">
-                                            <img src="_#= $urlHtmlEncodeString(imagesUrl) =#_" class="_#= $htmlEncode(iconClass) =#_" alt="_#= $htmlEncode(pl.title) =#_" />
+                                            <img src="_#= $urlHtmlEncode(imagesUrl) =#_" class="_#= $htmlEncode(iconClass) =#_" alt="_#= $htmlEncode(pl.title) =#_" />
                                         </span>
                                     </a></li>
 <!--#_ 
@@ -444,7 +444,7 @@ _#-->
                             var preferencesUrl = ctx.ScriptApplicationManager.get_preferencesUrl();
                             if(!$isEmptyString(preferencesUrl)){ 
 _#-->
-                                <li id="Preferences"><a title="_#= $htmlEncode(Srch.Res.rs_Preferences) =#_" id="PreferencesLink" href="_#= $urlHtmlEncodeString(preferencesUrl) =#_">_#= $htmlEncode(Srch.Res.rs_Preferences) =#_</a></li>
+                                <li id="Preferences"><a title="_#= $htmlEncode(Srch.Res.rs_Preferences) =#_" id="PreferencesLink" href="_#= $urlHtmlEncode(preferencesUrl) =#_">_#= $htmlEncode(Srch.Res.rs_Preferences) =#_</a></li>
 <!--#_ 
                             }
                         }
@@ -453,7 +453,7 @@ _#-->
                             var advancedUrl = ctx.ClientControl.get_advancedUrl();
                             if(!$isEmptyString(advancedUrl)){ 
 _#-->
-                                <li id="Advanced"><a title="_#= $htmlEncode(Srch.Res.rs_Advanced) =#_" id="AdvancedLink" href="_#= $urlHtmlEncodeString(advancedUrl) =#_">_#= $htmlEncode(Srch.Res.rs_Advanced) =#_</a></li>
+                                <li id="Advanced"><a title="_#= $htmlEncode(Srch.Res.rs_Advanced) =#_" id="AdvancedLink" href="_#= $urlHtmlEncode(advancedUrl) =#_">_#= $htmlEncode(Srch.Res.rs_Advanced) =#_</a></li>
 <!--#_ 
                             }
                         }
