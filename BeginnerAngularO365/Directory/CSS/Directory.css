@@ -1,0 +1,516 @@
+﻿	/* Employee Directory CSS       */
+/* =========================================================================== */
+
+
+/* ----------------------------------------------------------------------------*/
+
+/*smaller than a vertical ipad*/
+@media screen and (max-width: 765px) {
+ #InlineActions {  position: relative;  padding-right: 5px;  font-size: large; bottom: -30px;visibility: visible;}
+ #refinerPanel{visibility: hidden;width: 0px;}
+ #contentPanel{left: 0px;}
+ #profileHeaderContainer{visibility: hidden;height: 0px;}
+ #Header-actions{visibility: hidden;width: 0px;}
+ #contentBody{left: 0px;top: 90px;} 
+ #detailPanel{top: 90px;} 
+ #cardBox{width: 90%;}
+ 
+}
+
+/*Sized for ipad vertical*/
+@media screen and (min-width:767px) and (max-width: 1022px) {
+ #refinerPanel{visibility: hidden;width: 0px;}
+ #contentPanel{left: 0px;}
+ #profileHeaderContainer{visibility: hidden;height: 0px;}
+ #Header-actions{visibility: hidden;width: 0px;}
+ #contentBody{left: 0px;top: 90px;} 
+ #detailPanel{top: 90px;} 
+ #cardBox{width: 211px;}
+ 
+}
+
+/*Sized under 1280*/
+@media screen and (min-width:1023px) and (max-width: 1279px) {
+ #refinerPanel{visibility: hidden;width: 0px;}
+ #contentPanel{left: 0px;}
+ #profileHeaderContainer{left: 0px;}
+ #Header-actions{left: 0px;}
+ #contentBody{left: 0px;} 
+ 
+}
+
+.InlineActions {visibility: hidden }
+.suiteBar {position: fixed; background-color: black; width: 100%; height: 50px;color: white; text-align: center; line-height: 40px;}
+.mainBody {
+	padding: 0px;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    position: fixed;
+	top:50px;}
+	
+.appBody
+{
+	overflow: scroll;
+    position: relative;
+    background: #eaeaea;
+    height: 100%;
+}
+.refinerPanel {
+
+    width: 241px;
+    background: white;
+    background-size: 100%;
+    top: 100;
+    bottom: 0;
+    padding: 10px;
+    position: fixed;
+    box-sizing: border-box;
+    }
+
+.refinerCategory{
+	color: rgb(0, 114, 198);
+	display: inline;
+	font-family: 'Segoe UI Web Semibold', 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+.contentPanel {
+   
+    position: absolute;
+    background-color: #eaeaea;
+    background-overflow:visible;
+    min-height: 100px;
+    padding: 0px;
+    top: 0px;
+    left: 240px;
+    height: 100%;
+    width: 100%;   
+
+    }
+/*.contentPanel { border: 1px solid #999999; padding: 1px; width: 300px; height:600px; float:left; background-color: blueviolet}*/
+.profileHeaderContainer
+{
+
+        position: fixed!important;
+    left: 242px;
+    padding-left: 0px;
+    right: 0px;
+    top: 100px;
+    height: 171px;
+    color: white;
+    vertical-align: middle;
+    background-image: url("../Images/backgroundimagelargealternate_eeaba604.jpg");
+}
+
+.SpinnerLoader
+{
+    position: absolute; 
+    top: 100px; 
+    left: 125px; 
+    z-index: 1;
+}
+
+.contentBody {
+    /*top: 272px;
+    position: fixed;
+    overflow-y: scroll;
+    left: 241px;
+    padding: 10;
+    margin: 0px;
+    height: 100%;
+    width: 98%;*/
+    
+    top: 272px;
+    position: fixed;
+    
+    left: 241px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+}
+
+.previewPanel {
+    background-color: whitesmoke;
+    z-index: 500;
+    height: 260;
+    width: 300px;
+    position: absolute;
+    top: -1px;
+    right: 281px;
+    border: #A9A9A9 solid 2px;
+    padding: 5px;
+    visibility: hidden;
+    -webkit-animation: fade 5s;
+    animation: fade 5s;
+    opacity: 1;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.cardPanel{
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cardPanelUL
+ {
+	padding-left:0px;
+  -webkit-padding-start: 0px;
+      list-style-type: none;
+ }
+ 
+ .detailName
+ {      
+        position: relative;
+    top: 5px;
+    left: 105px;
+    
+ }
+    
+.detailHeaderBox
+{       position: absolute;
+    background-color: whitesmoke;
+    height: 100px;
+    top: 0px;
+    border-style: solid;
+    border-width: thin;
+    left: 0px;
+    right: 0px;
+}
+
+.PersonalDetailChat
+{
+    position: absolute;
+    left: 105px;
+    top: 42px;
+}
+
+.PersonalDetailPhone
+{
+     position: absolute;
+    left: 135px;
+    top: 42px;
+}
+
+.PersonalDetailMail
+{
+    position: absolute;
+    left: 165px;
+    top: 42px;
+}
+
+.PersonalDetailOrg
+{
+    position: absolute;
+    left: 195px;
+    top: 44px;
+}
+.PersonalDetailDelve
+{
+   position: absolute;
+    left: 225px;
+    top: 44px;
+}
+
+.PersonalDetailHover
+{
+ 
+position: absolute;
+    top: 70px;
+    left: 105px;
+}
+
+.cardPhotoDetail
+{
+    
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 96px;
+    width: 96px;
+}
+
+.cardBox
+{
+ 	 	border-style: solid;
+		border-color: rgba(0, 0, 0, 0);
+		border-width: 2px;
+		background-clip: padding-box;
+		background-color: rgb(241, 241, 241);
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		color: rgb(51, 51, 51);
+		cursor: pointer;
+		display: inline-block;
+		font-family: 'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		height: 90px;
+		list-style-type: none;
+		margin-bottom: 7px;
+		margin-left: 0px;
+		margin-right: 6px;
+		margin-top: 0px;
+		opacity: 1;
+		position: relative;
+		text-align: left;
+		text-decoration: none;
+		transition-delay: 0s;
+		transition-duration: 0.1s;
+		transition-property: border-color;
+		transition-timing-function: ease;
+		width: 300px;
+	    vertical-align: top;
+   		padding: 10px;
+    }
+
+.cardBox:hover
+{
+	background:#d8d8d8;
+
+}
+
+.cardTitle
+{
+    list-style: none;
+
+    font-weight: 700;
+}
+
+.cardText
+{
+	list-style: none;
+    min-width: 250px;
+}
+
+.PersonDetailMemberships
+{
+	font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+	padding-left:0px;
+	list-style: none;
+    min-width: 250px;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+
+.cardPanelDetailUL {
+    padding-left: 0px;
+    -webkit-padding-start: 0px;
+    top: 115px;
+    position: absolute;
+}
+
+.PersonDetailHeader {
+    list-style: none;
+    margin-left: 0px;
+    min-width: 250px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    position: absolute;
+    top: 90px;
+}
+
+
+.PersonDetailLinks
+{
+	list-style: none;
+    margin-left: 20px;
+    min-width: 250px;
+    line-height:24px;
+    font-weight:400;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+
+a.RefinerLetter {
+    padding: 5px;
+    margin-right: 4px;
+    cursor: pointer;
+    color: white;
+      
+}
+
+a.RefinerLetter:hover {
+    
+    padding: 5px;
+    margin-right: 4px;
+    cursor: pointer;
+    
+    background-color: white;
+    color: black;
+    
+}
+.cardPhoto
+{
+    /* margin-left: 150; */
+    /* margin-top: 45px; */
+    border-radius: 50%;
+    border: 1px solid #eee;
+    max-width: 100%;
+    height: 80px;
+    width: 80px;
+    /* float: right; */
+    position: absolute;
+    bottom: 5;
+    right: 5;
+  }
+
+.cardDelve{
+    height: 25px;
+    width: 25px;
+    /* float: left; */
+    position: absolute;
+    bottom: 20px;
+}
+
+.refinerItem
+{
+	font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+    margin-left: -20px;}
+.cardOrg{
+    height: 25px;
+    width: 25px;
+    /* float: left; */
+    position: absolute;
+    bottom: 20px;
+    left:55px;
+    }
+.detailPanel {
+        border: 1px solid #999999;
+    margin-top: 0px;
+    right: 0px !important;
+    top: 270px;
+    bottom: 0px;
+    padding: 10px;
+    background-color: white;
+    width: 260px;
+    min-height: 100%;
+    position: fixed;
+
+    right: 240; }
+    
+.profileHeaderContainerName{
+	color:white;
+	padding-left:50px;
+	line-height:90px;
+	font-size:42px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+	}
+    
+ .profileHeaderSubTitle{
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-family: 'Segoe UI Web Regular','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    padding-top: -30px;
+ 	visibility:visible;
+ }
+ 
+  .profileHeaderSubTitleEdit{
+ 	visibility:hidden;
+ }
+
+.Header-actions{
+        line-height: 40px;
+    background-color: gray;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    top: 230;
+    position: fixed;
+    left: 242px;
+    right: 0px;
+    height: 40px;
+    }
+    
+    
+.srchbox          { font-family: verdana; border: 2px solid #999999; background-color: transparent }
+
+
+.Black
+{
+    color: black;
+}
+
+
+body              { margin: 0px;  }   
+
+
+.PadLeft10
+{
+    padding-left: 10px;
+}
+
+.PadTop10
+{
+    padding-top: 10px;
+}
+.PadBottom10
+{
+    padding-bottom: 10px;
+}
+.PadBottom20
+{
+    padding-bottom: 20px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.bigSearchBox {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    z-index: 100;
+    width: 100%;
+    
+    padding-left: 20px;
+    background: "2px solid whitesmoke";
+}
+
+
+
+ .profileIconContainer
+ {
+    margin: 15px 0px 15px 0px;
+ }
+
+ .profileContainer a{
+    text-decoration:none;
+ }
+
+.profileIconContainer img
+{
+    width:20px;
+    height:20px;
+}
